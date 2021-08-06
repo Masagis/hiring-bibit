@@ -1,4 +1,4 @@
-# Synrgy Final Project TEAM A (BEASY) - Frond-End Developer
+# Hiring Bibit App - Frondend Developer
 
 ## Description
 
@@ -11,10 +11,15 @@ To run and use this repo, here are the steps you can do.
 ### Logic Test Installation in Local
 
 1. Clone repo ini pada komputer anda
+
+```sh
+git clone https://github.com/Masagis/hiring-bibit.git
+```
+
 2. Pindah ke directory root repo
 
 ```sh
-cd logicTest
+cd logic-test
 ```
 
 4. Jalankan aplikasi
@@ -37,6 +42,11 @@ node index.js
 ### React Dev Test Installation in Local
 
 1. Clone repo ini pada komputer anda
+
+```sh
+git clone https://github.com/Masagis/hiring-bibit.git
+```
+
 2. Pindah ke directory root repo
 
 ```sh
@@ -59,7 +69,7 @@ npm run dev atau yarn dev
 
 ### Testing movies-app
 
-Anda dapat menjalankan tes ini dengan:
+Untuk dapat melihat hasil tes, anda dapat menjalankannya dengan:
 
 ```sh
 npm run test atau yarn test
