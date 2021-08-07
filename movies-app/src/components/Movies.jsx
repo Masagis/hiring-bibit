@@ -24,10 +24,13 @@ export default function Movies() {
 	return (
 		<div className='row'>
 			<div className='col-lg-12'>
-				<h2 data-testid='title'>Movies App Bibit</h2>
+				<h2 data-testid='title' className='text-center mt-5'>
+					Movies App Bibit
+				</h2>
+				<p></p>
 				<Form inline onSubmit={handleSearch}>
 					<FormGroup className=''>
-						<Label className='mr-2' data-testid='subtitle'>
+						<Label className='mr-2 mb-2' data-testid='subtitle'>
 							Search Title
 						</Label>
 						<Input
@@ -39,13 +42,14 @@ export default function Movies() {
 							data-testid='input'
 						/>
 					</FormGroup>
-					<Button type='submit' className='mt-4'>
+					<Button type='submit' className='mt-3'>
 						Search
 					</Button>
 				</Form>
 				<hr />
 				{globalState.isLoading && <Spinner color='primary' />}
 				{!globalState.isLoading && movies && <MoviesList data={movies} />}
+				{!globalState.isLoading && !movies && <p>Movie tidak ditemukan</p>}
 			</div>
 		</div>
 	)

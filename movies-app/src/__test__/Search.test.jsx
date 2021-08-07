@@ -1,5 +1,5 @@
 import Movies from '../components/Movies'
-import { render, fireEvent } from '@testing-library/react'
+import { render, fireEvent } from '../setupTests'
 
 let getByTestId
 beforeEach(() => {
@@ -9,7 +9,7 @@ beforeEach(() => {
 
 test('Title Check', () => {
 	const titleEl = getByTestId('title')
-	expect(titleEl.textContent).toBe('Movies App Bibit')
+	expect(titleEl.textContent).toBe('Movies App')
 })
 
 test('Sub Title Check', () => {
